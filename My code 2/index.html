@@ -1,19 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Growth App</title>
-
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Growth App</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
       rel="stylesheet"
     />
-
-    <!-- Font Awesome -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
@@ -21,23 +17,19 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-
-    <!-- Local CSS -->
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="shortcut icon" href="images/icon.jpg" type="image/x-icon" />
-  </head>
-  <body>
-    <nav class="navbar">
-      <div class="container">
-        <!-- Logo Section -->
-        <div class="logo">
+  <link rel="stylesheet" href="css/style.css">
+   <link rel="shortcut icon" href="images/32691.jpg" type="image/x-icon" />
+</head>
+<body>
+  <nav class="navbar">
+    <div class="container">
+      <div class="logo">
           <a href="index.html">
-            <img src="images/logo.png" alt="Company Logo" />
+            <img src="images/logo.png" alt="Logo" />
           </a>
         </div>
 
-        <!-- Navigation Menu -->
-        <div class="main-menu">
+        <div class="main-menu" active>
           <ul>
             <li>
               <a href="index.html">Home</a>
@@ -55,35 +47,337 @@
             </li>
           </ul>
         </div>
-      </div>
-    </nav>
-    <!--Hero-->
-    <section class="hero">
-      <div class="container">
-        <div class="hero-content"></div>
+        <!-- Hamburger Button -->
+         <button id="hamburger-button" class="hamburger-button">
+          <div class="hamburger-line"></div>
+          <div class="hamburger-line"></div>
+          <div class="hamburger-line"></div>
+          <div class="hamburger-line"></div>
+         </button>
+         <div class="mobile-menu">
+          <ul>
+            <li>
+              <a href="index.html">Home</a>
+            </li>
+            <li>
+              <a href="#">About us</a>
+            </li>
+            <li>
+              <a href="#">Blog</a>
+            </li>
+            <li>
+              <a class="btn-light" href="#">
+                <i class="fas fa-user"></i> Log In
+              </a>
+            </li>
+          </ul>
+         </div>
+    </div>
+  </nav>
+  <!-- Hero -->
+   <section class="hero">
+    <div class="container">
+      <div class="hero-content">
         <h1 class="hero-heading text-xxl">
           A powerful solution to grow your startup. Fast!
         </h1>
         <p class="hero-text">
-          Organise, collaboration, and track progress seamlessly with our one-stop-shop startup growth tool
+          Organise, collaboration, and track progress seamlessly with our one-stop-shop startup
         </p>
-        <div class="hero-buttons">
-          <a href="#" class="btn btn-primary">Get started</a>
-          <a href="#" class="btn">
-            <i class= "fas fa-laptop"></i>Book a Demo></a>
+        <div class="hero-butttons">
+          <a href="#" class="btn btn-primary">Get Started</a>
+          <a href="#" class="btn"><i class="fas fa-laptop"></i> Book a Demo</a>
+        </div>
+      </div>
+    </div>
+   </section>
+  <!--Video Section -->
+  <section class="video bg-black">
+    <div class="container-sm">
+      <h2 class="video-heading text-xl text-center">
+        see how it works and get started in less than 2 minutes
+      </h2>
+      <div class="video-content">
+        <a href="#">
+          <img src="images/video-preview.png" alt="video" class="video-preview">
+        </a>
+
+        <a href="#" class="btn btn-primary">Get Started</a>
+      </div>
+    </div>
+  </section>
+  <!--Testimonials-->
+  <section class="testimonials bg-dark">
+    <div class="container">
+      <h3 class="testimonials-heading text-xl">
+        Don't just take our word for it,see the stories from business just like yours.
+      </h3>
+      <div class="testimonials-grid">
+        <div class="card">
+          <p>
+            "Growth App has transformed the way we manage our projects and increase our productivity. the intuitive interface and powerful features have made it an essential tool for our team." 
+          </p>
+          <p>Segun Ayodeji</p>
+          <p>Olawale Moses</p>
+        </div>
+
+        <div class="card">
+            <p>
+              “As a small business owner, it's important to have a tool that can
+              help me keep track of everything. The Growth app has been a
+              lifesaver for me, allowing me to manage my contacts, schedule
+              appointments, and track progress all in one place..”
+            </p>
+
+            <p>Johnathan Lee</p>
+            <p>Red Bolt</p>
+          </div>
+
+          <div class="card">
+            <p>
+              “The dashboards and reporting feature has provided valuable
+              insights into our performance and helped us make data-driven
+              decisions. It's a game changer for us.”
+            </p>
+
+            <p>Christain Edward</p>
+            <p>James Smith</p>
+          </div>
         </div>
       </div>
     </section>
-    <!--video section-->
-    <section class="video bg-black">
+
+  <!--Pricing Section-->
+  <section class="pricing">
+    <div class="container">
+      <h3 class="pricing-heading text-xl text-center">
+        Choose the plan that fits your needs
+      </h3>
+      <p class="pricing-subheading text-md text-center">
+        We offer a range of pricing plans to suit businesses of all sizes.
+        start free and scale while you grow. No hidden fees. Unlimited users for free
+      </p>
+      <div class="pricing-grid">
+        <!-- Pricing Card 1 -->
+        <div class="card bg-light">
+          <div class="pricing-card-header">
+            <h4 class="pricing-heading text-xl">
+              Simple Plan
+            </h4>
+            <p class="pricing-card-subheading">
+            Perfect for small teams and startups. Keep track of your projects and tasks with ease,
+            gain valuable insights, analyse live data and performance tracking.
+            </p>
+            <p class="pricing-card-price">
+              <span class="text-xl">Free</span>
+              *No credit card required
+            </p>
+          </div>
+          <div class="pricing-card-body">
+            <ul>
+              <li><i class="fas fa-check"></i> Unlimited users</li>
+              <li><i class="fas fa-check"></i> Basic support</li>
+              <li><i class="fas fa-check"></i> 5GB storage</li>
+              <li><i class="fas fa-check"></i> Basic analytics</li>
+            </ul>
+            <a href="#" class="btn btn-primary">Get Started</a>
+          </div>
+        </div>
+        <!-- Pricing Card 2 -->
+        <div class="card bg-black">
+          <div class="pricing-card-header">
+            <h4 class="pricing-heading text-xl">
+              Pro Plan
+            </h4>
+            <p class="pricing-card-subheading">
+              Ideal for growing teams that need more advanced features and support.
+            </p>
+            <p class="pricing-card-price">
+              <span class="text-xl">$19/month</span>
+              *No credit card required
+            </p>
+          </div>
+          <div class="pricing-card-body">
+            <ul>
+              <li><i class="fas fa-check"></i> Unlimited users</li>
+              <li><i class="fas fa-check"></i> Priority support</li>
+              <li><i class="fas fa-check"></i> 50GB storage</li>
+              <li><i class="fas fa-check"></i> Advanced analytics</li>
+            </ul>
+            <a href="#" class="btn btn-primary">Get Started</a>
+          </div>
+        </div>
+      </div>
+      <p class="pricing-footer text-center">
+        *All plans come with a 30-day money-back guarantee. No hidden fees, cancel anytime.
+      </p>
+    </div>
+  </section>
+  <!--FAQ-->
+  <section class="faq bg-light">
       <div class="container-sm">
-        <h2 class="video-heading text-xl text-center">
-          see how it works and get started in less than 2 minutes
-        </h2>
+        <h3 class="text-xl text-center">Frequently Asked Questions</h3>
+        <ul class="faq-menu">
+          <li class="active">All</li>
+          <li>Getting Started</li>
+          <li>Pricing</li>
+        </ul>
+        <div class="faq-content">
+          <div class="faq-group">
+            <div class="faq-group-header">
+              <h4 class="text-md">
+                How does the contact management feature help me keep track of
+                clients and partners?
+              </h4>
+              <i class="fas fa-minus"></i>
+            </div>
+            <div class="faq-group-body open">
+              <p>
+                Keep track of your contacts, gain valuable insights, analyse
+                live data and performance metrics.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-group">
+            <div class="faq-group-header">
+              <h4 class="text-md">
+                Can I customize the dashboards and reporting feature to display
+                the metrics that are most important to my business?
+              </h4>
+              <i class="fas fa-plus"></i>
+            </div>
+            <div class="faq-group-body">
+              <p>
+                Yes, absolutely! Our dashboards and reporting features are fully customizable, 
+                allowing you to display the metrics that matter most to your business. 
+                You can tailor the layout, select key performance indicators (KPIs), 
+                apply filters, and even set up automated reports—ensuring you always have a clear view 
+                of what drives your success.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-group">
+            <div class="faq-group-header">
+              <h4 class="text-md">
+                How does the task management feature help me delegate tasks to
+                my team and track progress?
+              </h4>
+              <i class="fas fa-plus"></i>
+            </div>
+            <div class="faq-group-body">
+              <p>
+                The task management feature is designed to simplify delegation and enhance team productivity.
+                 You can easily assign tasks to specific team members, set deadlines, and 
+                 prioritize activities based on urgency or importance. 
+                 Real-time progress tracking allows you to monitor the status of each task, 
+                 receive updates, and ensure accountability—all in one centralized dashboard. 
+                 This ensures nothing falls through the cracks and your team stays aligned and on track.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-group">
+            <div class="faq-group-header">
+              <h4 class="text-md">
+                Can I collaborate with my team in real-time using all tools?
+              </h4>
+              <i class="fas fa-plus"></i>
+            </div>
+            <div class="faq-group-body">
+              <p>
+                Yes, absolutely! Our collaboration tools are designed to facilitate real-time communication and teamwork. You can share files, leave comments, and work together on projects seamlessly, regardless of your team's location.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-group">
+            <div class="faq-group-header">
+              <h4 class="text-md">Is the app available on all devices?</h4>
+              <i class="fas fa-plus"></i>
+            </div>
+            <div class="faq-group-body">
+              <p>
+                **Yes, you can collaborate with your team in real-time using all tools.** 
+                The platform supports seamless communication, live updates, 
+                and shared access, ensuring everyone stays connected and aligned.
+
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-group">
+            <div class="faq-group-header">
+              <h4 class="text-md">
+                How does the app help me stay compliant when working with
+                freelancers and contractors?
+              </h4>
+              <i class="fas fa-plus"></i>
+            </div>
+            <div class="faq-group-body">
+              <p>
+                The app helps you stay compliant by streamlining contract management, tracking deliverables, 
+                and ensuring proper documentation for every freelancer and contractor. 
+                It supports secure digital agreements, automated payment records, and 
+                tax-related compliance features—helping you meet legal and regulatory requirements with ease.
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
+  </div>
 
-    <!-- JavaScript -->
-    <script src="js/main.js"></script>
-  </body>
+  <!-- Footer -->
+   <footer class="footer bg-black">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <a href="index.html">
+            <img src="images/logo-white.png" alt="logo">
+          </a>
+          <div class="card">
+            <h4>Subscribe to Novalith Marketing</h4>
+            <p class="text-sm">
+              Subscribe now to recieve free marketing strategy based on your BUSINESS NICHE
+              and take your business to the next level.
+            </p>
+            <form>
+              <input type="email" id="email" placeholder="Enter your email">
+              <button type="submit" class="btn btn-primary btn-block">Subscribe</button>
+            </form>
+          </div>
+          <i class="fab fa-linkedin"></i>
+          <i class="fab fa-instagram"></i>
+        </div>
+        <div>
+          <h4>Company</h4>
+          <ul>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Our Process</a></li>
+            <li><a href="#">Join Our Team</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Resources</h4>
+          <ul>
+            <li><a href="#">News</a></li>
+            <li><a href="#">Research</a></li>
+            <li><a href="#">Recent Projects</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <ul>
+            <li>
+              <a href="#">hello@growthapp.com</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+   </footer>
+  <script src="js/main.js"></script>
+</body>
 </html>
